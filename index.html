@@ -1,224 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joseph's Personal Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    /* Basic styling for the page */
-    html, body {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      font-family: Inter;
-      background-color: #e6e6e6;
-      color: black;
-    }
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Joseph's Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic styling for the page */
+        html, body {
+          height: 100%;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          font-family: Inter;
+          background-color: #e6e6e6;
+          color: black;
+        }
 
-    body {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
+        body {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
 
-    /* Navigation styling */
-    nav {
-      background-color: #9E9DCA;
-      width: 100%;
-    }
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      overflow: hidden;
-      text-align: center;
-      justify-content: center;
-    }
-    nav li {
-      float: left;
-    }
-    nav li a {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    nav li a:hover {
-      background-color: #e6e6e6;
-    }
-    /* Content styling */
-    .content {
-      flex: 1;
-      padding: 10px;
-      text-align: left;
-      width: 80%; /* Set a fixed width */
-      max-width: 1200px; /* Optional: Set a maximum width */
-      margin: 0 auto; /* Center the content */
-    }
-    .tab-content {
-      display: none;
-      padding: 20px;
-      line-height: 1.75;
-    }
-    .active {
-      display: block;
-    }
-    footer {
-      background-color: #cccccc;
-      width: 100%;
-      padding: 20px;
-      text-align: center;
-      color: black;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+        /* Navigation styling */
+        nav {
+          background-color: #9E9DCA;
+          width: 100%;
+        }
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          overflow: hidden;
+          text-align: center;
+          justify-content: center;
+        }
+        nav li {
+          float: left;
+        }
+        nav li a {
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        nav li a:hover {
+          background-color: #e6e6e6;
+        }
+        /* Content styling */
+        .content {
+          flex: 1;
+          padding: 10px;
+          text-align: left;
+          width: 80%; /* Set a fixed width */
+          max-width: 1200px; /* Optional: Set a maximum width */
+          margin: 0 auto; /* Center the content */
+        }
+        .tab-content {
+          display: none;
+          padding: 20px;
+          line-height: 1.75;
+        }
+        .active {
+          display: block;
+        }
+        footer {
+          background-color: #cccccc;
+          width: 100%;
+          padding: 20px;
+          text-align: center;
+          color: black;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
 
-    footer h1 {
-      margin-top: 10px;
-      margin-bottom: 10px; /* Reduce the bottom margin of the heading */
-    }
+        footer h1 {
+          margin-top: 10px;
+          margin-bottom: 10px; /* Reduce the bottom margin of the heading */
+        }
 
-    footer p {
-      margin-top: 5px; /* Reduce the top margin of the paragraph */
-      margin-bottom: 10px;
-    }
+        footer p {
+          margin-top: 5px; /* Reduce the top margin of the paragraph */
+          margin-bottom: 10px;
+        }
 
-    footer .icon-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        footer .icon-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
-    .icon {
-      text-decoration: none;
-      padding: 10px;
-    }
+        .icon {
+          text-decoration: none;
+          padding: 10px;
+        }
 
-    .icon.github i {
-      color: #333; /* GitHub icon color */
-    }
+        .icon.github i {
+          color: #333; /* GitHub icon color */
+        }
 
-    .icon.linkedin i {
-      color: #0077b5; /* LinkedIn icon color */
-    }
-  </style>
+        .icon.linkedin i {
+          color: #0077b5; /* LinkedIn icon color */
+        }
+    </style>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLV7EE93S6"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-VLV7EE93S6');
+    gtag('config', 'G-VLV7EE93S6');
 </script>
 <body>
 
-  <nav>
+<nav>
     <ul>
-      <li><a href="#" onclick="openTab('home')">Home</a></li>
-      <li><a href="#" onclick="openTab('about')">About</a></li>
-      <li><a href="#" onclick="openTab('courses')">Courses</a></li>
+        <li><a href="#" onclick="openTab('home')">Home</a></li>
+        <li><a href="#" onclick="openTab('about')">About</a></li>
+        <li><a href="#" onclick="openTab('courses')">Courses</a></li>
     </ul>
-  </nav>
+</nav>
 
-  <div class="content">
+<div class="content">
     <div id="home" class="tab-content active">
-      <h1>Hello World!</h1>
-      <p>I'm Joseph Cheung, a first-year CS undergraduate student at the University of Toronto.</p>
-      <p>I will be adding more content to this website soon.</p>
+        <h1>Hello World!</h1>
+        <p>I'm Joseph Cheung, a first-year CS undergraduate student at the University of Toronto.</p>
+        <p>I will be adding more content to this website soon.</p>
     </div>
 
     <div id="about" class="tab-content">
-      <h1>About</h1>
-      <p>hmm...</p>
+        <h1>About</h1>
+        <p>hmm...</p>
     </div>
 
     <div id="courses" class="tab-content">
-      <h1>Courses</h1>
-      <p>
-        This is a list of courses I have taken at UofT, and some information about them. I am aiming to complete a
-        CS Specialist and a Statistics Major. I hope this will be useful for future students pursuing similar majors.
-        Note:
-        I transferred 2.5 credits from IB (unfortunately all of them are BR5).
-      </p>
-      <p>
-        The courses are arranged according to their course code, in alphabetical order.
-      </p>
-      <p>
-        <b>Year 1 (2024-2025)</b>
-      </p>
-      <p>
-        <b>CSC110: Foundations of Computer Science I </b>(Paul He & Sadia Sharmin)<br>
-        BR5, Course Average: A- <br>
-        This is a well-structured course on the basics of CS and Python. For those who studied CS in high
-        school, this course is a great review but some of you might find it boring. For those new to programming,
-        this course is paced appropriately, and you have lots of support from the teaching team. This is a full-credit
-        course, so there are more lecture hours than other courses. The tests and exams are straightforward, so most
-        students get (crazily) amazing scores.
-      </p>
-      <p>
-        <b>CSC111: Foundations of Computer Science II </b>(Sadia Sharmin)<br>
-        BR5, Course Average:  <br>
-        IPR
-      </p>
-      <p>
-        <b>CDN199: Canada-Hong Kong Migration </b>(Amardeep Kaur)<br>
-        BR3, Course Average: B- <br>
-        ...
-      </p>
-      <p>
-        <b>EAS194: East Asia through Music </b>(Atsuko Sakaki)<br>
-        BR1, Course Average:  <br>
-        IPR
-      </p>
-      <p>
-        <b>EAS289: Environment and East Asia </b>(Yue Meng)<br>
-        BR3, Course Average: B <br>
-        ...
-      </p>
-      <p>
-        <b>MAT137: Calculus with Proofs </b>(Boris Khesin)<br>
-        BR5, Course Average:  <br>
-        IPR
-      </p>
-      <p>
-        <b>MAT223: Linear Algebra I </b>(Kevin Watmough)<br>
-        BR5, Course Average:  <br>
-        IPR
-      </p>
-      <p>
-        <b>STA130: An Introduction to Statistical Reasoning and Data Science </b>(Nathalie Moon & Morris Greenberg)<br>
-        BR5, Course Average:  <br>
-        IPR
-      </p>
+        <h1>Courses</h1>
+        <p>
+            This is a list of courses I have taken at UofT, and some information about them. I am aiming to complete a
+            CS Specialist and a Statistics Major. I hope this will be useful for future students pursuing similar
+            majors.
+            Note:
+            I transferred 2.5 credits from IB (unfortunately all of them are BR5).
+        </p>
+        <p>
+            The courses are arranged according to their course code, in alphabetical order.
+        </p>
+        <h2>Year 1 (2024-2025)</h2>
+        <p>
+            <b>CSC110: Foundations of Computer Science I </b>(Paul He & Sadia Sharmin)<br>
+            BR5, Course Average: A- <br>
+            This is a well-structured course on the basics of CS and Python. For those who studied CS in high
+            school, this course is a great review but some of you might find it boring. For those new to programming,
+            this course is paced appropriately, and you have lots of support from the teaching team. This is a
+            full-credit course, so there are more lecture hours than other courses. The tests and exams are
+            straightforward, so many students get (crazily) amazing scores.
+        </p>
+        <p>
+            <b>CSC111: Foundations of Computer Science II </b>(Sadia Sharmin)<br>
+            BR5, Course Average: <br>
+            IPR
+        </p>
+        <p>
+            <b>CDN199: Canada-Hong Kong Migration </b>(Amardeep Kaur)<br>
+            BR3, Course Average: B- <br>
+            ...
+        </p>
+        <p>
+            <b>EAS194: East Asia through Music </b>(Atsuko Sakaki)<br>
+            BR1, Course Average: <br>
+            IPR
+        </p>
+        <p>
+            <b>EAS289: Environment and East Asia </b>(Yue Meng)<br>
+            BR3, Course Average: B <br>
+            ...
+        </p>
+        <p>
+            <b>MAT137: Calculus with Proofs </b>(Boris Khesin)<br>
+            BR5, Course Average: <br>
+            IPR
+        </p>
+        <p>
+            <b>MAT223: Linear Algebra I </b>(Kevin Watmough)<br>
+            BR5, Course Average: <br>
+            IPR
+        </p>
+        <p>
+            <b>STA130: An Introduction to Statistical Reasoning and Data Science </b>(Nathalie Moon & Morris
+            Greenberg)<br>
+            BR5, Course Average: <br>
+            IPR
+        </p>
     </div>
-   </div>
+</div>
 
-  <footer>
+<footer>
     <h1>Contacts</h1>
     <p><a href="mailto:cheunghsinkuang@gmail.com">cheunghsinkuang@gmail.com</a></p>
     <div class="icon-container">
-      <a href="https://github.com/JosephCheung0327" target="_blank" class="icon github">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/josephcheunghk/" target="_blank" class="icon linkedin">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </a>
+        <a href="https://github.com/JosephCheung0327" target="_blank" class="icon github">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/josephcheunghk/" target="_blank" class="icon linkedin">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
     </div>
-  </footer>
+    <small>Last updated: Feb 19, 2025</small>
+</footer>
 
-  <script>
+<script>
     function openTab(tabName) {
       var i, tabcontents;
       // Get all elements with class="tab-content" and hide them
@@ -229,6 +230,6 @@
       // Show the current tab
       document.getElementById(tabName).classList.add("active");
     }
-  </script>
+</script>
 </body>
 </html>
