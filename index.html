@@ -55,9 +55,9 @@
 
   <nav>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#blog">Blog</a></li>
+      <li><a href="#" onclick="openTab('home')">Home</a></li>
+      <li><a href="#" onclick="openTab('about')">About</a></li>
+      <li><a href="#" onclick="openTab('blog')">Blog</a></li>
     </ul>
   </nav>
 
@@ -79,34 +79,16 @@
   </div>
 
     <script>
-    function showTab(hash) {
-      // Hide all tab contents
-      var tabContents = document.querySelectorAll(".tab-content");
-      tabContents.forEach(function(tab) {
-        tab.classList.remove("active");
-      });
-
-      // If no hash is provided, default to #home
-      if (!hash) {
-        hash = "#home";
+    function openTab(tabName) {
+      var i, tabcontents;
+      // Get all elements with class="tab-content" and hide them
+      tabcontents = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active");
       }
-
-      // Show the corresponding tab content if it exists
-      var activeTab = document.querySelector(hash);
-      if (activeTab) {
-        activeTab.classList.add("active");
-      }
+      // Show the current tab
+      document.getElementById(tabName).classList.add("active");
     }
-
-    // When the page loads, show the correct tab based on the URL hash
-    window.addEventListener("DOMContentLoaded", function() {
-      showTab(window.location.hash);
-    });
-
-    // Listen for hash changes (when a user clicks on a navigation link)
-    window.addEventListener("hashchange", function() {
-      showTab(window.location.hash);
-    });
   </script>
 
 </body>
