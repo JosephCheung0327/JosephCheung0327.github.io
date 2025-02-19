@@ -1,7 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <style>
+    /* Basic styling for the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Navigation styling */
+    nav {
+      background-color: #333;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    nav li {
+      float: left;
+    }
+    nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav li a:hover {
+      background-color: #111;
+    }
+    /* Content styling */
+    .content {
+      padding: 20px;
+    }
+    .tab-content {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="openTab('home')">Home</a></li>
+      <li><a href="#" onclick="openTab('about')">About</a></li>
+      <li><a href="#" onclick="openTab('blog')">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div id="home" class="tab-content active">
+      <h1>Welcome to the Home Page</h1>
+      <p>This is the home section of the website.</p>
+    </div>
+
+    <div id="about" class="tab-content">
+      <h1>About Us</h1>
+      <p>This section contains information about our website.</p>
+    </div>
+
+    <div id="blog" class="tab-content">
+      <h1>Blog</h1>
+      <p>Read our latest blog posts here.</p>
+    </div>
+  </div>
+
+  <script>
+    function openTab(tabName) {
+      var i, tabcontents;
+      // Get all elements with class="tab-content" and hide them
+      tabcontents = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active");
+      }
+      // Show the current tab
+      document.getElementById(tabName).classList.add("active");
+    }
+  </script>
+
 </body>
 </html>
