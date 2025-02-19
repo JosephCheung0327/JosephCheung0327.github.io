@@ -20,9 +20,13 @@
       background-color: #e6e6e6;
       color: black;
     }
+
     body {
-        flex: 1;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
+
     /* Navigation styling */
     nav {
       background-color: #9E9DCA;
@@ -54,10 +58,15 @@
     .content {
       flex: 1;
       padding: 10px;
-      text-align: center;
+      text-align: left;
+      width: 80%; /* Set a fixed width */
+      max-width: 1200px; /* Optional: Set a maximum width */
+      margin: 0 auto; /* Center the content */
     }
     .tab-content {
       display: none;
+      padding: 20px;
+      line-height: 1.75;
     }
     .active {
       display: block;
@@ -110,6 +119,7 @@
       <li><a href="#" onclick="openTab('home')">Home</a></li>
       <li><a href="#" onclick="openTab('about')">About</a></li>
       <li><a href="#" onclick="openTab('blog')">Blog</a></li>
+      <li><a href="#" onclick="openTab('courses')">Courses</a></li>
     </ul>
   </nav>
 
@@ -129,7 +139,67 @@
       <h1>Blog</h1>
       <p>Stay tuned :)</p>
     </div>
-  </div>
+
+    <div id="courses" class="tab-content">
+      <h1>Courses</h1>
+      <p>
+        This is a list of courses I have taken at UofT, and some information about them. I am aiming to complete a
+        CS Specialist and a Statistics Major. I hope this will be useful for future students pursuing similar majors.
+        Note:
+        I transferred 2.5 credits from IB (unfortunately all of them are BR5).
+      </p>
+      <p>
+        The courses are arranged according to their course code, in alphabetical order.
+      </p>
+      <p>
+        <b>Year 1 (2024-2025)</b>
+      </p>
+      <p>
+        <b>CSC110: Foundations of Computer Science I </b>(Paul He & Sadia Sharmin)<br>
+        BR5, Course Average: A- <br>
+        This is a well-structured course on the basics of CS and Python. For those who studied CS in high
+        school, this course is a great review but some of you might find it boring. For those new to programming,
+        this course is paced appropriately, and you have lots of support from the teaching team. This is a full-credit
+        course, so there are more lecture hours than other courses. The tests and exams are straightforward, so most
+        students get (crazily) amazing scores.
+      </p>
+      <p>
+        <b>CSC111: Foundations of Computer Science II </b>(Sadia Sharmin)<br>
+        BR5, Course Average:  <br>
+        IPR
+      </p>
+      <p>
+        <b>CDN199: Canada-Hong Kong Migration </b>(Amardeep Kaur)<br>
+        BR3, Course Average: B- <br>
+        ...
+      </p>
+      <p>
+        <b>EAS194: East Asia through Music </b>(Atsuko Sakaki)<br>
+        BR1, Course Average:  <br>
+        IPR
+      </p>
+      <p>
+        <b>EAS289: Environment and East Asia </b>(Yue Meng)<br>
+        BR3, Course Average: B <br>
+        ...
+      </p>
+      <p>
+        <b>MAT137: Calculus with Proofs </b>(Boris Khesin)<br>
+        BR5, Course Average:  <br>
+        IPR
+      </p>
+      <p>
+        <b>MAT223: Linear Algebra I </b>(Kevin Watmough)<br>
+        BR5, Course Average:  <br>
+        IPR
+      </p>
+      <p>
+        <b>STA130: An Introduction to Statistical Reasoning and Data Science </b>(Nathalie Moon & Morris Greenberg)<br>
+        BR5, Course Average:  <br>
+        IPR
+      </p>
+    </div>
+   </div>
 
   <footer>
     <p>cheunghsinkuang@gmail.com</p>
@@ -155,6 +225,5 @@
       document.getElementById(tabName).classList.add("active");
     }
   </script>
-
 </body>
 </html>
