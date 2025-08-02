@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a363fc4.css",
-    "main.js": "/static/js/main.82c90a2c.js",
+    "main.css": "/static/css/main.ff0946cf.css",
+    "main.js": "/static/js/main.f7952be4.js",
     "static/js/453.94080bd4.chunk.js": "/static/js/453.94080bd4.chunk.js",
     "static/media/hongkong.JPG": "/static/media/hongkong.a8e875cbb4168da171ad.JPG",
     "static/media/canada.jpg": "/static/media/canada.84f9a5d4725d6a25215e.jpg",
     "static/media/taiwan.JPG": "/static/media/taiwan.2d638d1121cb7b462907.JPG",
     "index.html": "/index.html",
-    "main.5a363fc4.css.map": "/static/css/main.5a363fc4.css.map",
-    "main.82c90a2c.js.map": "/static/js/main.82c90a2c.js.map",
+    "main.ff0946cf.css.map": "/static/css/main.ff0946cf.css.map",
+    "main.f7952be4.js.map": "/static/js/main.f7952be4.js.map",
     "453.94080bd4.chunk.js.map": "/static/js/453.94080bd4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a363fc4.css",
-    "static/js/main.82c90a2c.js"
+    "static/css/main.ff0946cf.css",
+    "static/js/main.f7952be4.js"
   ]
 }
